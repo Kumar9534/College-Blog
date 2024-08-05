@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            text-decoration:none;
+            list-style:none;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:montserrat;
+        }
+        nav{
+            background:#f76d1d;
+            height:80px;
+            width:100%;
+
+        }
+        label.logo{
+            color:white;
+            font-size:35px;
+            line-height:80px;
+            padding:0 100px;
+            font-weight:bold;
+        }
+        nav ul{
+            float:right;
+            margin-right:20px;
+        }
+        nav ul li{
+            display:inline-block;
+            line-height:80px;
+            margin:0 5px;
+        }
+        nav ul li a{
+            color:white;
+            font-size:17px;
+           padding:7px 13px;
+           border-radius:3px; 
+            text-transform:uppercase;
+        }
+         /* a:hover{
+            background:#68b2e3;
+            transition: .5s;
+            color:black;
+        } */
+        a.active,a:hover{
+            background:#1b9bff;
+            transition: .5s;
+        }
+        .checkbtn {
+            font-size:30px;
+            color:white;
+            float:right;
+            line-height:80px;
+            margin-right:40px;
+            cursor:pointer;
+        }
+        #check {
+            display:none;
+        }
+        @media (max-width:952){
+            label.logo{
+                font-size:30px;
+                padding-left:50px;
+
+            }
+            nav ul li a{
+                font-size:16px;
+            }
+        }
+
+        @media (max-width:858px){
+            .checkbtn {
+                display:block;
+            }
+            ul{
+                position:fixed;
+                width:100%;
+                height:100vh;
+                background:#2c3e50;
+                top:80px;
+                left:-100;
+                text-align:center;
+                transition:all .5s;
+            }
+            nav ul li{
+                display:block;
+                margin:50px 0;
+                line-height:30px;
+            }
+            nav ul li a{
+                font-size:20px;
+            }
+            a:hover,a.active{
+                background:none;
+                color:#0082e6;
+            }
+            #check:checked ~ ul{
+                left:0;
+            }
+        }
+        
+
+/* ---------------------------------slider-------------------------- */
+        .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: 400px;
+    
+    background-size:cover;
+    background-position: center;
+    background-repeat:none;
+  }
+
+  .slide.active {
+    transform: translateX(0);
+    
+
+  }
+
+  .slider-controls {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .prev-slide,
+  .next-slide {
+    margin: 0 10px;
+  }
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">BCET</label>
+        <ul>
+            <li>
+                <a class="active" href="#">Home</a>
+                
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+</section>
+
+<section>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide active" style="background: url('./slider.clg.jpeg')"></div>
+          <div class="slide" style="background: url('./slider2.clg.jpg')"></div>
+          <div class="slide" style="background: url('./central\ laibary.jpg')"></div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev-slide">Prev</button>
+          <button class="next-slide">Next</button>
+        </div>
+      </div>
+</section>
+
+
+<script>
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.querySelector(".prev-slide");
+    const nextBtn = document.querySelector(".next-slide");
+    let slideIndex = 0;
+    
+    slides[slideIndex].classList.add('active');
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    
+    
+    function prevSlide() {
+        slides[slideIndex].classList.remove('active');
+
+slideIndex = (slideIndex === 0) ? slides.length - 1 : slideIndex - 1;
+slides[slideIndex].classList.add('active');
+slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+function nextSlide() {
+slides[slideIndex].classList.remove('active');
+
+slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+slides[slideIndex].classList.add('active');
+slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+  </script>
+    
+
+</body>
+</html>

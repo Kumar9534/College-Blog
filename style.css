@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+    
+}
+body{
+    font-family:montserrat;
+}
+nav{
+    background:#f76d1d;
+    height:80px;
+    width:100%;
+
+}
+label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size:17px;
+   padding:7px 13px;
+   border-radius:3px; 
+    text-transform:uppercase;
+}
+ /* a:hover{
+    background:#68b2e3;
+    transition: .5s;
+    color:black;
+} */
+a.active,a:hover{
+    background:#1b9bff;
+    transition: .5s;
+}
+.checkbtn {
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+}
+#check {
+    display:none;
+}
+@media (max-width:952){
+    label.logo{
+        font-size:30px;
+        padding-left:50px;
+
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn {
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#0e2f50;
+        top:80px;
+        left:-100;
+        text-align:center;
+        transition:all .5s;
+    }
+    nav ul li{
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a:hover,a.active{
+        background:none;
+        color:#0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+section{
+   background-image:url(https://mydukaan.io/_next/static/images/BG14-a1ce02e7ed7324269234381d3801a2f8.jpg);
+   background-size:cover;
+   height:calc(100vh-8px);
+   
+}
+
+
+
+
+
+
+
+body,html{
+    font-family:Roboto,sans-serif,arial;
+    background:#f0f2f7;
+
+}
+
+.width-100 {
+    width:100%;
+    float:left;
+    
+}
+
+.container{
+    width:1500px;
+    margin:0px auto;
+
+}
+
+.top-header{
+    background:#2196f3;
+    padding:10px 0px;
+    border-bottom:1px solid #3131315e;
+
+}
+
+.news-list{
+   background:#fff;
+   color:red;
+   padding:6px;
+   font-size:20px;
+    
+   
+
+}
+
+.headerquote{
+  font-size:18px;
+  color:white;
+  width:auto;
+
+ 
+     
+/* .list-item {
+    list-style:none;
+    padding-left:0px;
+    text-align:center;
+}
+.list-item li{
+   display:inline-block;
+   margin:0px 8px 8px 0px; 
+}
+.list-item li a{
+    color:white;
+    text-decoration:none;
+} */
+
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border;
+}
+nav{
+    background-color:#7a7a7a;
+    height:80px;
+    width:100px;
+}
+label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
+}
+
+

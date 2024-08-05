@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+
+        }
+        .course{
+            width:80%;
+            margin:auto;
+            text-align:center;
+            padding-top:100px;
+        }
+        h1{
+            font-weight:600;
+            font-size:36px;
+        }
+        p{
+            color:#ff9900;
+            font-size:14px;
+            font-weight:300;
+            line-height:22px;
+            padding:10px;
+        }
+        .row{
+            margin-top:5%;
+            display:flex;
+            justify-content:space-between;
+        }
+        .course-col{
+            flex-basis:31%;
+            /* background:#fff3f3; */
+            border-radius:10px;
+            margin-bottom:5%;
+            padding:20px 12px;
+            box-sizing:border-box;
+            transition:0.5s;
+
+        }
+        h3{
+            text-align:center;
+            font-weight:600;
+            margin:10px 0;
+        }
+        .course-col:hover{
+            box-shadow:0 0  20px 0px rgba(0,0,0,0.2);
+        }
+        .course-col div{
+            font-size:20px;
+            text-align:center;
+        }
+        .Approval div {
+            font-size:20px;
+            text-align:center;
+        }
+        .placements div {
+            font-size:20px;
+            text-align:center;
+        }
+        @media(max-width:800px){
+           .row{
+            flex-direction: column;
+           } 
+        }
+
+
+
+
+/* ----------------------slider----------------- */
+
+main{
+    width:1000px;
+    height:500px;
+    margin:auto;
+    margin-top:100px;
+    box-shadow:0px 0px 3px grey;
+    overflow:none;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.slider{
+    width:100%;
+    height:100%;
+    transition:1s;
+    position:absolute;
+}
+.nav{
+    text-align:center;
+    margin-top:20px;
+
+}
+.nav button{
+    font-size:large;
+    margin:20px;
+}
+
+        
+         
+
+    </style>
+</head>
+<body>
+
+<main>
+    <img src="https://picsum.photos/id/237/1000/500" class="slide" alt="">
+    <img src="https://picsum.photos/id/238/1000/500" class="slide" alt="">
+    <img src="https://picsum.photos/id/239/1000/500" class="slide" alt="">
+    <img src="https://picsum.photos/id/240/1000/500" class="slide" alt="">
+    <img src="https://picsum.photos/id/241/1000/500" class="slide" alt="">
+</main>
+<div class="nav">
+    <button onclick="goPrev">
+        <
+    </button>
+    <button onclick="goNext">
+        >
+    </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="course">
+    <h1>Course We offer</h1>
+    <p>Bengal College of Engineering and Technology is One of the Best Private Engineering and MBA College in West Bengal , Durgapur </p>
+    <div class="row">
+        <h3>post-graduate</h3>
+        <p><marquee behavior="scroll" width="500px" height="300px" direction="up" onmouseover="this.stop();" onmouseout="this.start();"><p></p>
+            <div><a href="http://bcetdgp.ac.in/courses/"><b><span style="color: #ff9900;">Undergraduate Courses (BCET)</span></b></a></div>
+            <div><b>B.Tech&nbsp;</b></div>
+            <div>CSE (Intake – 180)</div>
+            <div>CSE(AI&amp;ML) (Intake – 30)</div>
+            <div>IT (Intake – 120)</div>
+            <div>ECE (Intake – 60)</div>
+            <div>EE (Intake – 60)</div>
+            <div>ME (Intake – 60)</div>
+            <div>CE (Intake – 60)</div>
+            <div></div>
+            <div><b>Post Graduate Courses (BCET)</b></div>
+            <div>MBA (Intake – 30)</div>
+            <div><span style="color: #000000;">&nbsp;</span></div>
+            <div><b><span style="color: #000000;">Other Courses (BCET)</span></b></div>
+            <div>BBA (Intake – 90)</div>
+            <div>BCA (Intake – 120)</div>
+            <div></div>
+            <div><span style="color: #ff9900; font-family: arial, sans-serif;">Courses by Associated Colleges&nbsp;</span></div>
+            <div></div>
+            <div><b><span style="color: #ff9900;">BCP</span></b></div>
+            <div>CE (Intake – 30)</div>
+            <div>ME (Intake – 120)</div>
+            <div>EE (Intake – 120)</div>
+            <div>ETCE (Intake – 30)</div>
+            <div>CST (Intake -60)</div>
+            <div><b><span style="color: #ff9900;">BCPSR</span></b></div>
+            <div>D.Pharm (Intake: 60)</div>
+            <div>B.Pharm (Intake: 100)</div>
+            <div><span style="color: #000000;">M.Pharm (Intake: 15)</span></div>
+            <div><b><span style="color: #ff9900;">DIMS</span></b></div>
+            <div>D.El.Ed. (Intake: 100)</div>
+            <div>B.Ed. (Intake: 100)</div>
+            <p></p></marquee></p>
+    </div>
+    <div class="row">
+        <h3>post-graduate</h3>
+        <p>
+            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8" style=""><div class="gdlr-core-pbf-element"><div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 10px ;"><div class="gdlr-core-title-item-title-wrap "><h6 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 18px ;font-weight: 500 ;text-transform: none ;">Placement Highlights<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h6></div></div></div><div class="gdlr-core-pbf-element"><div class="gdlr-core-divider-item gdlr-core-divider-item-small-center gdlr-core-item-pdlr" style="margin-bottom: 20px ;"><div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #ff5311 ;"><div class="gdlr-core-divider-line-bold  gdlr-core-skin-divider" style="border-color: #ff5311 ;"></div></div></div></div><div class="gdlr-core-pbf-element"><div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-personnel-item-style-grid-with-background gdlr-core-personnel-style-grid gdlr-core-with-background gdlr-core-with-divider  gdlr-core-item-pdlr" style="padding-bottom: 0px ;" id="sss"><div class="gdlr-core-flexslider flexslider gdlr-core-js-2 " data-type="carousel" data-column="1" data-nav="bullet" data-nav-parent="gdlr-core-personnel-item"><div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2000%; margin-left: -1011.6px;"><li class="gdlr-core-item-mglr" style="width: 317.2px; margin-right: 20px; float: left; display: block;" data-thumb-alt=""><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2022/11/plac.jpg" alt="" width="297" height="158" title="plac" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2023</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="https://bcetdgp.ac.in/wp-content/uploads/2023/08/Placement-2023.pdf">View Data</a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2021/07/placement-2020.jpg" alt="" width="297" height="158" title="placement-2020" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2022</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="https://bcetdgp.ac.in/wp-content/uploads/2022/11/Placement-2022.pdf">View Data</a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2021/07/placement-2021.jpg" alt="" width="297" height="158" title="placement-2021" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2021</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2020/04/placement-2020.jpg" alt="" width="297" height="158" title="placement-2020" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2020</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/placement-2018.jpg" alt="" width="297" height="158" title="placement-2018" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2019</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/placement-2017.jpg" alt="" width="297" height="158" title="placement-2017" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2018</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/placement-2016.jpg" alt="" width="297" height="158" title="placement-2016" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2017</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/placement-2015.jpg" alt="" width="297" height="158" title="placement-2015" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2016</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/placement-2014.jpg" alt="" width="297" height="158" title="placement-2014" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2015</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li><li class="gdlr-core-item-mglr" data-thumb-alt="" style="width: 317.2px; margin-right: 20px; float: left; display: block;"><div class="gdlr-core-personnel-list clearfixgdlr-core-outer-frame-element" style="box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -moz-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); -webkit-box-shadow: 5px 5px 5px rgba(255, 83, 17,0.6); "><div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-zoom-on-hover"><img src="https://bcetdgp.ac.in/wp-content/uploads/2019/11/placement-2015-copy.png" alt="" width="297" height="158" title="placement-2015 copy" draggable="false"></div><div class="gdlr-core-personnel-list-content-wrap"><h3 class="gdlr-core-personnel-list-title" style="text-transform: capitalize ;">Placement Highlights 2014</h3><div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div><div class="gdlr-core-personnel-list-content"><p><a href="http://bcetdgp.ac.in/placements-highlights/"><b>View Data</b></a></p>
+</div></div></div></li></ul></div><ol class="flex-control-nav flex-control-paging"><li><a href="#" class="">1</a></li><li><a href="#" class="">2</a></li><li><a href="#" class="">3</a></li><li><a href="#" class="flex-active">4</a></li><li><a href="#" class="">5</a></li><li><a href="#" class="">6</a></li><li><a href="#" class="">7</a></li><li><a href="#" class="">8</a></li><li><a href="#" class="">9</a></li><li><a href="#" class="">10</a></li></ol></div></div></div></div>
+        </p>
+        </div>
+</section>
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, libero!</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Courses we offer</h3>
+            <p><marquee behavior="scroll" width="80%" height="200px" direction="up" onmouseover="this.stop();" onmouseout="this.start();"><p></p>
+                <div><a href="http://bcetdgp.ac.in/courses/"><b><span style="color: #ff9900;">Undergraduate Courses (BCET)</span></b></a></div>
+                <div><b>B.Tech&nbsp;</b></div>
+                <div>CSE (Intake – 180)</div>
+                <div>CSE(AI&amp;ML) (Intake – 30)</div>
+                <div>IT (Intake – 120)</div>
+                <div>ECE (Intake – 60)</div>
+                <div>EE (Intake – 60)</div>
+                <div>ME (Intake – 60)</div>
+                <div>CE (Intake – 60)</div>
+                <div></div>
+                <div><b>Post Graduate Courses (BCET)</b></div>
+                <div>MBA (Intake – 30)</div>
+                <div><span style="color: #000000;">&nbsp;</span></div>
+                <div><b><span style="color: #000000;">Other Courses (BCET)</span></b></div>
+                <div>BBA (Intake – 90)</div>
+                <div>BCA (Intake – 120)</div>
+                <div></div>
+                <div><span style="color: #ff9900; font-family: arial, sans-serif;">Courses by Associated Colleges&nbsp;</span></div>
+                <div></div>
+                <div><b><span style="color: #ff9900;">BCP</span></b></div>
+                <div>CE (Intake – 30)</div>
+                <div>ME (Intake – 120)</div>
+                <div>EE (Intake – 120)</div>
+                <div>ETCE (Intake – 30)</div>
+                <div>CST (Intake -60)</div>
+                <div><b><span style="color: #ff9900;">BCPSR</span></b></div>
+                <div>D.Pharm (Intake: 60)</div>
+                <div>B.Pharm (Intake: 100)</div>
+                <div><span style="color: #000000;">M.Pharm (Intake: 15)</span></div>
+                <div><b><span style="color: #ff9900;">DIMS</span></b></div>
+                <div>D.El.Ed. (Intake: 100)</div>
+                <div>B.Ed. (Intake: 100)</div>
+                <p></p></marquee></p>
+
+        </div>
+        <div class="Approval course-col">
+            <h3>Approval & Affiliation</h3>
+            <p><marquee behavior="scroll" width="80%" height="200px"direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                <div>
+                    <img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/approval-3.jpg">
+                </div>
+                <div><b style="text-align:center;">NBA Accreditation</b></div>
+                <div>
+                    <img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/approval-2.jpg">
+                </div>
+                <div><b>MAKAUT Affiliation</b></div>
+                <div>
+                    <img src="https://bcetdgp.ac.in/wp-content/uploads/2019/10/approval-1.jpg">
+                </div>
+                <div><b>AICTE Approval</b></div>
+
+
+
+
+
+            </marquee></p>
+
+        </div>
+        <div class="placements course-col">
+            <h3>Placement Highlights</h3>
+            <p>
+                <marquee direction="up" behavior="scroll" width="80%" height="200px" onmouseover="this.stop();"onmouseout="this.start();">
+                    <div><b>Placement Highlights 2023</b></div>
+                    <div>
+                        <img src="https://bcetdgp.ac.in/wp-content/uploads/2022/11/plac.jpg">
+                    </div>
+                    <div><b>Placement Highlights 2022</b></div>
+                    <div>
+                        <img src="https://bcetdgp.ac.in/wp-content/uploads/2021/07/placement-2020.jpg">
+                    </div>
+                    <div><b>Placement Highlights 2021</b></div>
+                    <div>
+                        <img src="https://bcetdgp.ac.in/wp-content/uploads/2021/07/placement-2021.jpg">
+                    </div>
+                    <div><b>Placement Highlights 2020</b></div>
+                    <div>
+                        <img src="https://bcetdgp.ac.in/wp-content/uploads/2020/04/placement-2020.jpg">
+                    </div>
+
+
+                </marquee>
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;https://bcetdgp.ac.in/wp-content/uploads/2023/02/Leader-banner-2.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="https://bcetdgp.ac.in/wp-content/uploads/2023/02/Leader-banner-2.jpg"></div>
+<div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;https://bcetdgp.ac.in/wp-content/uploads/2022/06/1.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="https://bcetdgp.ac.in/wp-content/uploads/2022/06/1.jpg"></div>
+<div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;https://bcetdgp.ac.in/wp-content/uploads/2023/02/IMG_20230121_152924-scaled.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="https://bcetdgp.ac.in/wp-content/uploads/2023/02/IMG_20230121_152924-scaled.jpg"></div>
+
+
+
+<div class="financity-top-bar-left financity-item-pdlr">CALL: 9679848800, 7477794700, 0343-2533189</div>
+<div class="financity-top-bar-right-text"><a href="http://bcetdgp.ac.in/university-registration-for-freshers/">University Registration for Freshers</a>&nbsp; | &nbsp;<a href="https://bcetdgp.ac.in/wp-content/uploads/2023/02/NIRF-2023.pdf">NIRF DATA</a><i class="fa fa-envelope-open-o" style="font-size: 17px ;color: #ff5311 ;margin-left: 20px ;margin-right: 14px ;"></i> admission@sksgi.com</div>
+<div class="financity-top-bar-right financity-item-pdlr"><div class="financity-top-bar-right-text"><a href="http://bcetdgp.ac.in/university-registration-for-freshers/">University Registration for Freshers</a>&nbsp; | &nbsp;<a href="https://bcetdgp.ac.in/wp-content/uploads/2023/02/NIRF-2023.pdf">NIRF DATA</a><i class="fa fa-envelope-open-o" style="font-size: 17px ;color: #ff5311 ;margin-left: 20px ;margin-right: 14px ;"></i> admission@sksgi.com</div><span class="financity-top-bar-divider financity-left-margin"></span><div class="financity-top-bar-right-social"><a href="#" target="_blank" class="financity-top-bar-social-icon" title="facebook"><i class="fa fa-facebook"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="google-plus"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="twitter"><i class="fa fa-twitter"></i></a><a href="#" target="_blank" class="financity-top-bar-social-icon" title="instagram"><i class="fa fa-instagram"></i></a></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const slides= document.querySelectorAll('.slide')
+    // console.log(slides)
+    var counter =0;
+    slides.forEach(
+        (slide,index) => {
+            slide.style.left = '${index * 100}%'           
+        }
+    )
+
+    const goPrev =() =>{
+        counter--
+        alert()
+        slideImage()
+    }
+
+    const goNext =()=>{
+        counter++
+        alert()
+        slideImage()
+    }
+
+     
+
+    const slideImage = ()=>{
+        slides.forEach(
+            (slider) => {
+                slide.style.transform = 'translateX(-${counter * 100}%)'
+            }
+        )
+    }
+
+
+</script>
+
+</body>
+</html>
